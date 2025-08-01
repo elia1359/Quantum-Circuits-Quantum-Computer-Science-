@@ -7,7 +7,7 @@ from qiskit_aer import Aer
 # Bring Harmade To Make 1 & 0 (At Same time and mommnet) Happend [That's the Goal of Quantum Computers]
 # Make The 0, 1, 2, 3, 4, 5 on (if the light 0 is on) or off
 # Measure All The QuantumCircuit  
-Elia = QuantumCircuit(6)
+Elia = QuantumCircuit(6, 6)
 Elia.h(0)
 Elia.cx(0, 5)
 Elia.measure_all()
