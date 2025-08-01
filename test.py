@@ -15,7 +15,7 @@ Elia.measure_all()
 # We Need an 'Aer' Simulator (Not a Real Quantum Computer). Bring qasm_ simulator
 # We Need an 'execute' so we can Bring 'Elia' and 'Simulator both The measure in shots = 1300
 # We Need "Job" so we so we can get counts inside the result
-Simulator = Aer.get_backend('qasm_simulator')
+simulator = Aer.get_backend('qasm_simulator')
 result = execute(Elia, Simulator, shots=1300). result()
 counts = result.get_counts()
 
