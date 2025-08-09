@@ -19,5 +19,13 @@ Simulator = Aer.get_backend('qasm_simulator')
 result = execute(Elia, Simulator, shots=1300).result()
 counts = result.get_counts()
 
-# Give The Real Result on the Screen by print the "counts" virable
+# Importing matplotlib.pyplot as plt
+# We brings the keys and values (get_counts)
+# We are showing the results on Bar Chart
+from matplotlib import pyplot as plt
+plt.bar( counts.keys(), counts.values() )
+plt.show()
+
+# Show the raw quantum measurement results (counts) in the console using Bar Chart
 print(counts)
+
